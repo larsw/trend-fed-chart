@@ -6,7 +6,7 @@ class ToggleButton extends React.Component {
         children: React.PropTypes.node,
         defaultValue: React.PropTypes.bool,
         title: React.PropTypes.string,
-        onClick: React.PropTypes.func.isRequired
+        onClick: React.PropTypes.func
     };
     static defaultProps = {
         title: 'Expand/Collapse',

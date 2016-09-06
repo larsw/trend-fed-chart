@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import GridLayout from 'react-grid-layout';
 import Widget from '../Widget';
 import './index.styl';
+import GaugeChart from './gauge.jsx';
 
 class Workspace extends Component {
     render() {
@@ -40,12 +41,11 @@ class Workspace extends Component {
                         </Widget.Controls>
                     </Widget.Header>
                     <Widget.Content style={styles.widgetContent}>
-                        Pie Chart
                     </Widget.Content>
                 </Widget>
                 <Widget key="line-chart">
                     <Widget.Header>
-                        <Widget.Title>Line Chart</Widget.Title>
+                        <Widget.Title>Gauge Chart</Widget.Title>
                         <Widget.Controls>
                             <Widget.Button type="edit" />
                             <Widget.Button type="toggle" />
@@ -54,7 +54,7 @@ class Workspace extends Component {
                         </Widget.Controls>
                     </Widget.Header>
                     <Widget.Content style={styles.widgetContent}>
-                        Line Chart
+                        <GaugeChart />
                     </Widget.Content>
                 </Widget>
                 <Widget key="bar-chart">

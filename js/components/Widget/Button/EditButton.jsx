@@ -27,7 +27,7 @@ const EditButton = (props) => {
 EditButton.propTypes = {
     children: React.PropTypes.node,
     title: React.PropTypes.string,
-    onClick: React.PropTypes.func.isRequired
+    onClick: React.PropTypes.func
 };
 EditButton.defaultProps = {
     title: 'Edit'
